@@ -1,0 +1,50 @@
+[2021-03-03 01:20:57.164] [exthost] [info] extension host started
+[2021-03-03 01:20:57.376] [exthost] [info] ExtensionService#_doActivateExtension jsw.csharpextensions {"startup":false,"extensionId":{"value":"jsw.csharpextensions","_lower":"jsw.csharpextensions"},"activationEvent":"onLanguage:csharp"}
+[2021-03-03 01:20:57.378] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/jesus/.vscode-oss/extensions/jsw.csharpextensions-1.3.6/out/src/extension
+[2021-03-03 01:20:57.509] [exthost] [info] ExtensionService#_doActivateExtension muhammad-sammy.csharp {"startup":false,"extensionId":{"value":"muhammad-sammy.csharp","_lower":"muhammad-sammy.csharp"},"activationEvent":"onLanguage:csharp"}
+[2021-03-03 01:20:57.509] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/jesus/.vscode-oss/extensions/muhammad-sammy.csharp-1.23.9/dist/extension
+[2021-03-03 01:20:57.546] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-03-03 01:20:57.546] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscodium-bin/resources/app/extensions/debug-auto-launch/dist/extension
+[2021-03-03 01:20:57.549] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-03-03 01:20:57.549] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscodium-bin/resources/app/extensions/git/dist/main
+[2021-03-03 01:20:57.570] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer {"startup":true,"extensionId":{"value":"CoenraadS.bracket-pair-colorizer","_lower":"coenraads.bracket-pair-colorizer"},"activationEvent":"*"}
+[2021-03-03 01:20:57.570] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/jesus/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-1.0.61/out/src/extension
+[2021-03-03 01:20:57.594] [exthost] [info] ExtensionService#_doActivateExtension cweijan.vscode-mysql-client2 {"startup":true,"extensionId":{"value":"cweijan.vscode-mysql-client2","_lower":"cweijan.vscode-mysql-client2"},"activationEvent":"*"}
+[2021-03-03 01:20:57.594] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/jesus/.vscode-oss/extensions/cweijan.vscode-mysql-client2-3.5.4/out/extension
+[2021-03-03 01:20:57.759] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"extensionId":{"value":"dbaeumer.vscode-eslint","_lower":"dbaeumer.vscode-eslint"},"activationEvent":"*"}
+[2021-03-03 01:20:57.760] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/jesus/.vscode-oss/extensions/dbaeumer.vscode-eslint-2.1.8/client/out/extension
+[2021-03-03 01:20:57.780] [exthost] [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css {"startup":true,"extensionId":{"value":"ecmel.vscode-html-css","_lower":"ecmel.vscode-html-css"},"activationEvent":"*"}
+[2021-03-03 01:20:57.781] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/jesus/.vscode-oss/extensions/ecmel.vscode-html-css-1.9.1/dist/extension.js
+[2021-03-03 01:20:57.796] [exthost] [info] ExtensionService#_doActivateExtension HookyQR.beautify {"startup":true,"extensionId":{"value":"HookyQR.beautify","_lower":"hookyqr.beautify"},"activationEvent":"*"}
+[2021-03-03 01:20:57.796] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/jesus/.vscode-oss/extensions/hookyqr.beautify-1.4.11/extension
+[2021-03-03 01:20:57.844] [exthost] [info] ExtensionService#_doActivateExtension LaurentTreguier.vscode-simple-icons {"startup":true,"extensionId":{"value":"LaurentTreguier.vscode-simple-icons","_lower":"laurenttreguier.vscode-simple-icons"},"activationEvent":"*"}
+[2021-03-03 01:20:57.844] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/jesus/.vscode-oss/extensions/laurenttreguier.vscode-simple-icons-1.13.5/out/extension
+[2021-03-03 01:20:57.846] [exthost] [info] ExtensionService#_doActivateExtension PKief.material-icon-theme {"startup":true,"extensionId":{"value":"PKief.material-icon-theme","_lower":"pkief.material-icon-theme"},"activationEvent":"*"}
+[2021-03-03 01:20:57.846] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/jesus/.vscode-oss/extensions/pkief.material-icon-theme-4.5.0/dist/extension
+[2021-03-03 01:20:57.855] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"extensionId":{"value":"ritwickdey.LiveServer","_lower":"ritwickdey.liveserver"},"activationEvent":"*"}
+[2021-03-03 01:20:57.856] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/jesus/.vscode-oss/extensions/ritwickdey.liveserver-5.6.1/out/src/extension
+[2021-03-03 01:20:58.316] [exthost] [info] ExtensionService#_doActivateExtension sainnhe.gruvbox-material {"startup":true,"extensionId":{"value":"sainnhe.gruvbox-material","_lower":"sainnhe.gruvbox-material"},"activationEvent":"*"}
+[2021-03-03 01:20:58.317] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/jesus/.vscode-oss/extensions/sainnhe.gruvbox-material-6.3.6/out/extension.js
+[2021-03-03 01:20:58.360] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim {"startup":true,"extensionId":{"value":"vscodevim.vim","_lower":"vscodevim.vim"},"activationEvent":"*"}
+[2021-03-03 01:20:58.360] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/jesus/.vscode-oss/extensions/vscodevim.vim-1.18.9/out/extension
+[2021-03-03 01:20:58.752] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-03-03 01:20:58.752] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscodium-bin/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2021-03-03 01:20:58.873] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":false,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-03-03 01:20:58.873] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscodium-bin/resources/app/extensions/github/dist/extension.js
+[2021-03-03 01:20:58.917] [exthost] [info] eager extensions activated
+[2021-03-03 01:20:58.933] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onStartupFinished"}
+[2021-03-03 01:20:58.933] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscodium-bin/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2021-03-03 01:20:58.939] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":false,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"onStartupFinished"}
+[2021-03-03 01:20:58.939] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscodium-bin/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2021-03-03 01:20:58.942] [exthost] [info] ExtensionService#_doActivateExtension vscode.testing-editor-contributions {"startup":false,"extensionId":{"value":"vscode.testing-editor-contributions","_lower":"vscode.testing-editor-contributions"},"activationEvent":"onStartupFinished"}
+[2021-03-03 01:20:58.942] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscodium-bin/resources/app/extensions/testing-editor-contributions/dist/extension.js
+[2021-03-03 01:21:01.886] [exthost] [error] [muhammad-sammy.csharp] provider FAILED
+[2021-03-03 01:21:01.887] [exthost] [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: undefined
+[2021-03-03 01:21:06.183] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"extensionId":{"value":"vscode.configuration-editing","_lower":"vscode.configuration-editing"},"activationEvent":"onLanguage:jsonc"}
+[2021-03-03 01:21:06.183] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscodium-bin/resources/app/extensions/configuration-editing/dist/configurationEditingMain
+[2021-03-03 01:21:06.189] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"extensionId":{"value":"vscode.json-language-features","_lower":"vscode.json-language-features"},"activationEvent":"onLanguage:jsonc"}
+[2021-03-03 01:21:06.189] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscodium-bin/resources/app/extensions/json-language-features/client/dist/node/jsonClientMain
+[2021-03-03 01:21:06.214] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"extensionId":{"value":"vscode.typescript-language-features","_lower":"vscode.typescript-language-features"},"activationEvent":"onLanguage:jsonc"}
+[2021-03-03 01:21:06.214] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscodium-bin/resources/app/extensions/typescript-language-features/dist/extension
+[2021-03-03 01:22:14.217] [exthost] [info] extension host terminating: received terminate message from renderer
+[2021-03-03 01:22:15.249] [exthost] [info] exiting with code 0

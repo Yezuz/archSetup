@@ -1,0 +1,161 @@
+Starting OmniSharp server at 3/4/2021, 12:58:43 AM
+    Target: /home/jesus/codingExcercises/dotnetExcercises/DynamicVarAndObjectTypes
+
+OmniSharp server started.
+    Path: /home/jesus/.vscode-oss/extensions/muhammad-sammy.csharp-1.23.9/.omnisharp/1.37.6/run
+    PID: 15462
+
+[info]: OmniSharp.Stdio.Host
+        Starting OmniSharp on arch 0.0 (x64)
+[info]: OmniSharp.Services.DotNetCliService
+        DotNetPath set to dotnet
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Located 1 MSBuild instance(s)
+            1: StandAlone 16.8.0 - "/home/jesus/.vscode-oss/extensions/muhammad-sammy.csharp-1.23.9/.omnisharp/1.37.6/omnisharp/.msbuild/Current/Bin"
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        MSBUILD_EXE_PATH environment variable set to '/home/jesus/.vscode-oss/extensions/muhammad-sammy.csharp-1.23.9/.omnisharp/1.37.6/omnisharp/.msbuild/Current/Bin/MSBuild.exe'
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Registered MSBuild instance: StandAlone 16.8.0 - "/home/jesus/.vscode-oss/extensions/muhammad-sammy.csharp-1.23.9/.omnisharp/1.37.6/omnisharp/.msbuild/Current/Bin"
+            CscToolExe = csc.exe
+            MSBuildToolsPath = /home/jesus/.vscode-oss/extensions/muhammad-sammy.csharp-1.23.9/.omnisharp/1.37.6/omnisharp/.msbuild/Current/Bin
+            CscToolPath = /home/jesus/.vscode-oss/extensions/muhammad-sammy.csharp-1.23.9/.omnisharp/1.37.6/omnisharp/.msbuild/Current/Bin/Roslyn
+            BypassFrameworkInstallChecks = true
+            MSBuildExtensionsPath = /home/jesus/.vscode-oss/extensions/muhammad-sammy.csharp-1.23.9/.omnisharp/1.37.6/omnisharp/.msbuild
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.CSharpFormattingWorkspaceOptionsProvider, Order: 0
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.Completion.CompletionOptionsProvider, Order: 0
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.RenameWorkspaceOptionsProvider, Order: 100
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.ImplementTypeWorkspaceOptionsProvider, Order: 110
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.BlockStructureWorkspaceOptionsProvider, Order: 140
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Detecting Cake files in '/home/jesus/codingExcercises/dotnetExcercises/DynamicVarAndObjectTypes'.
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Could not find any Cake files
+[info]: OmniSharp.MSBuild.ProjectSystem
+        No solution files found in '/home/jesus/codingExcercises/dotnetExcercises/DynamicVarAndObjectTypes'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/jesus/codingExcercises/dotnetExcercises/DynamicVarAndObjectTypes/DynamicVarAndObjectTypes.csproj'
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Detecting CSX files in '/home/jesus/codingExcercises/dotnetExcercises/DynamicVarAndObjectTypes'.
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Could not find any CSX files
+[info]: OmniSharp.WorkspaceInitializer
+        Configuration finished.
+[info]: OmniSharp.Stdio.Host
+        Omnisharp server running using Stdio at location '/home/jesus/codingExcercises/dotnetExcercises/DynamicVarAndObjectTypes' on host 15348.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/jesus/codingExcercises/dotnetExcercises/DynamicVarAndObjectTypes/DynamicVarAndObjectTypes.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/jesus/codingExcercises/dotnetExcercises/DynamicVarAndObjectTypes/DynamicVarAndObjectTypes.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/jesus/codingExcercises/dotnetExcercises/DynamicVarAndObjectTypes/DynamicVarAndObjectTypes.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: DynamicVarAndObjectTypes
+[warn]: OmniSharp.Stdio.Host
+        ************ Request ************
+{
+  "Type": "request",
+  "Seq": 17,
+  "Command": "/findusages",
+  "Arguments": {
+    "FileName": "/home/jesus/codingExcercises/dotnetExcercises/DynamicVarAndObjectTypes/Program.cs",
+    "Line": 11,
+    "Column": 45,
+    "OnlyThisFile": true,
+    "ExcludeDefinition": false
+  }
+}
+[fail]: OmniSharp.Stdio.Host
+        ************  Response ************ 
+{
+  "Request_seq": 17,
+  "Command": "/findusages",
+  "Running": true,
+  "Success": false,
+  "Message": "\"System.InvalidOperationException: Unexpected null\\n  at Roslyn.Utilities.Contract.Fail (System.String message) [0x00000] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.MapToAppropriateSymbol (Microsoft.CodeAnalysis.ISymbol symbol) [0x0003a] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.DetermineAllSymbolsCoreAsync (Microsoft.CodeAnalysis.ISymbol symbol, Roslyn.Utilities.ConcurrentSet`1[T] result) [0x0005b] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.DetermineAllSymbolsAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x0009f] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x001d5] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x003ba] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x00463] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol, Microsoft.CodeAnalysis.Solution solution, Microsoft.CodeAnalysis.FindSymbols.IStreamingFindReferencesProgress progress, System.Collections.Immutable.IImmutableSet`1[T] documents, Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchOptions options, System.Threading.CancellationToken cancellationToken) [0x00267] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol, Microsoft.CodeAnalysis.Solution solution, Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress progress, System.Collections.Immutable.IImmutableSet`1[T] documents, Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchOptions options, System.Threading.CancellationToken cancellationToken) [0x000b3] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol, Microsoft.CodeAnalysis.Solution solution, Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress progress, System.Collections.Immutable.IImmutableSet`1[T] documents, System.Threading.CancellationToken cancellationToken) [0x00086] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService.Handle (OmniSharp.Models.FindUsages.FindUsagesRequest request) [0x00390] in <09370a9acd194e4ab6aa0320066dbeaa>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].AggregateResponsesFromLanguageHandlers (OmniSharp.Endpoint.Exports.ExportHandler`2[TRequest,TResponse][] handlers, TRequest request) [0x000a9] in <c13615cca0c74ceaa15dfd4227fc93cf>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].HandleRequestForLanguage (System.String language, TRequest request, OmniSharp.Protocol.RequestPacket packet) [0x000fb] in <c13615cca0c74ceaa15dfd4227fc93cf>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].Process (OmniSharp.Protocol.RequestPacket packet, OmniSharp.Endpoint.LanguageModel model, Newtonsoft.Json.Linq.JToken requestObject) [0x0024b] in <c13615cca0c74ceaa15dfd4227fc93cf>:0 \\n  at OmniSharp.Stdio.Host.HandleRequest (System.String json, Microsoft.Extensions.Logging.ILogger logger) [0x000e8] in <f4f40b9ed3034a528e91f200ff10538e>:0 \"",
+  "Body": null,
+  "Seq": 1518,
+  "Type": "response"
+}
+[warn]: OmniSharp.Stdio.Host
+        ************ Request ************
+{
+  "Type": "request",
+  "Seq": 19,
+  "Command": "/findusages",
+  "Arguments": {
+    "FileName": "/home/jesus/codingExcercises/dotnetExcercises/DynamicVarAndObjectTypes/Program.cs",
+    "Line": 9,
+    "Column": 45,
+    "OnlyThisFile": true,
+    "ExcludeDefinition": false
+  }
+}
+[fail]: OmniSharp.Stdio.Host
+        ************  Response ************ 
+{
+  "Request_seq": 19,
+  "Command": "/findusages",
+  "Running": true,
+  "Success": false,
+  "Message": "\"System.InvalidOperationException: Unexpected null\\n  at Roslyn.Utilities.Contract.Fail (System.String message) [0x00000] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.MapToAppropriateSymbol (Microsoft.CodeAnalysis.ISymbol symbol) [0x0003a] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.DetermineAllSymbolsCoreAsync (Microsoft.CodeAnalysis.ISymbol symbol, Roslyn.Utilities.ConcurrentSet`1[T] result) [0x0005b] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.DetermineAllSymbolsAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x0009f] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x001d5] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x003ba] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x00463] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol, Microsoft.CodeAnalysis.Solution solution, Microsoft.CodeAnalysis.FindSymbols.IStreamingFindReferencesProgress progress, System.Collections.Immutable.IImmutableSet`1[T] documents, Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchOptions options, System.Threading.CancellationToken cancellationToken) [0x00267] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol, Microsoft.CodeAnalysis.Solution solution, Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress progress, System.Collections.Immutable.IImmutableSet`1[T] documents, Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchOptions options, System.Threading.CancellationToken cancellationToken) [0x000b3] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol, Microsoft.CodeAnalysis.Solution solution, Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress progress, System.Collections.Immutable.IImmutableSet`1[T] documents, System.Threading.CancellationToken cancellationToken) [0x00086] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService.Handle (OmniSharp.Models.FindUsages.FindUsagesRequest request) [0x00390] in <09370a9acd194e4ab6aa0320066dbeaa>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].AggregateResponsesFromLanguageHandlers (OmniSharp.Endpoint.Exports.ExportHandler`2[TRequest,TResponse][] handlers, TRequest request) [0x000a9] in <c13615cca0c74ceaa15dfd4227fc93cf>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].HandleRequestForLanguage (System.String language, TRequest request, OmniSharp.Protocol.RequestPacket packet) [0x000fb] in <c13615cca0c74ceaa15dfd4227fc93cf>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].Process (OmniSharp.Protocol.RequestPacket packet, OmniSharp.Endpoint.LanguageModel model, Newtonsoft.Json.Linq.JToken requestObject) [0x0024b] in <c13615cca0c74ceaa15dfd4227fc93cf>:0 \\n  at OmniSharp.Stdio.Host.HandleRequest (System.String json, Microsoft.Extensions.Logging.ILogger logger) [0x000e8] in <f4f40b9ed3034a528e91f200ff10538e>:0 \"",
+  "Body": null,
+  "Seq": 1528,
+  "Type": "response"
+}
+[warn]: OmniSharp.Stdio.Host
+        ************ Request ************
+{
+  "Type": "request",
+  "Seq": 21,
+  "Command": "/findusages",
+  "Arguments": {
+    "FileName": "/home/jesus/codingExcercises/dotnetExcercises/DynamicVarAndObjectTypes/Program.cs",
+    "Line": 9,
+    "Column": 45,
+    "OnlyThisFile": true,
+    "ExcludeDefinition": false
+  }
+}
+[fail]: OmniSharp.Stdio.Host
+        ************  Response ************ 
+{
+  "Request_seq": 21,
+  "Command": "/findusages",
+  "Running": true,
+  "Success": false,
+  "Message": "\"System.InvalidOperationException: Unexpected null\\n  at Roslyn.Utilities.Contract.Fail (System.String message) [0x00000] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.MapToAppropriateSymbol (Microsoft.CodeAnalysis.ISymbol symbol) [0x0003a] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.DetermineAllSymbolsCoreAsync (Microsoft.CodeAnalysis.ISymbol symbol, Roslyn.Utilities.ConcurrentSet`1[T] result) [0x0005b] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.DetermineAllSymbolsAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x0009f] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x001d5] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x003ba] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x00463] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol, Microsoft.CodeAnalysis.Solution solution, Microsoft.CodeAnalysis.FindSymbols.IStreamingFindReferencesProgress progress, System.Collections.Immutable.IImmutableSet`1[T] documents, Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchOptions options, System.Threading.CancellationToken cancellationToken) [0x00267] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol, Microsoft.CodeAnalysis.Solution solution, Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress progress, System.Collections.Immutable.IImmutableSet`1[T] documents, Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchOptions options, System.Threading.CancellationToken cancellationToken) [0x000b3] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol, Microsoft.CodeAnalysis.Solution solution, Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress progress, System.Collections.Immutable.IImmutableSet`1[T] documents, System.Threading.CancellationToken cancellationToken) [0x00086] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService.Handle (OmniSharp.Models.FindUsages.FindUsagesRequest request) [0x00390] in <09370a9acd194e4ab6aa0320066dbeaa>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].AggregateResponsesFromLanguageHandlers (OmniSharp.Endpoint.Exports.ExportHandler`2[TRequest,TResponse][] handlers, TRequest request) [0x000a9] in <c13615cca0c74ceaa15dfd4227fc93cf>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].HandleRequestForLanguage (System.String language, TRequest request, OmniSharp.Protocol.RequestPacket packet) [0x000fb] in <c13615cca0c74ceaa15dfd4227fc93cf>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].Process (OmniSharp.Protocol.RequestPacket packet, OmniSharp.Endpoint.LanguageModel model, Newtonsoft.Json.Linq.JToken requestObject) [0x0024b] in <c13615cca0c74ceaa15dfd4227fc93cf>:0 \\n  at OmniSharp.Stdio.Host.HandleRequest (System.String json, Microsoft.Extensions.Logging.ILogger logger) [0x000e8] in <f4f40b9ed3034a528e91f200ff10538e>:0 \"",
+  "Body": null,
+  "Seq": 1544,
+  "Type": "response"
+}
+[warn]: OmniSharp.Stdio.Host
+        ************ Request ************
+{
+  "Type": "request",
+  "Seq": 34,
+  "Command": "/findusages",
+  "Arguments": {
+    "FileName": "/home/jesus/codingExcercises/dotnetExcercises/DynamicVarAndObjectTypes/Program.cs",
+    "Line": 9,
+    "Column": 45,
+    "OnlyThisFile": true,
+    "ExcludeDefinition": false
+  }
+}
+[fail]: OmniSharp.Stdio.Host
+        ************  Response ************ 
+{
+  "Request_seq": 34,
+  "Command": "/findusages",
+  "Running": true,
+  "Success": false,
+  "Message": "\"System.InvalidOperationException: Unexpected null\\n  at Roslyn.Utilities.Contract.Fail (System.String message) [0x00000] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.MapToAppropriateSymbol (Microsoft.CodeAnalysis.ISymbol symbol) [0x0003a] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.DetermineAllSymbolsCoreAsync (Microsoft.CodeAnalysis.ISymbol symbol, Roslyn.Utilities.ConcurrentSet`1[T] result) [0x0005b] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.DetermineAllSymbolsAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x0009f] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x001d5] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x003ba] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchEngine.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol) [0x00463] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol, Microsoft.CodeAnalysis.Solution solution, Microsoft.CodeAnalysis.FindSymbols.IStreamingFindReferencesProgress progress, System.Collections.Immutable.IImmutableSet`1[T] documents, Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchOptions options, System.Threading.CancellationToken cancellationToken) [0x00267] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol, Microsoft.CodeAnalysis.Solution solution, Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress progress, System.Collections.Immutable.IImmutableSet`1[T] documents, Microsoft.CodeAnalysis.FindSymbols.FindReferencesSearchOptions options, System.Threading.CancellationToken cancellationToken) [0x000b3] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindReferencesAsync (Microsoft.CodeAnalysis.ISymbol symbol, Microsoft.CodeAnalysis.Solution solution, Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress progress, System.Collections.Immutable.IImmutableSet`1[T] documents, System.Threading.CancellationToken cancellationToken) [0x00086] in <1b72cf009970430282a46c2931a92a23>:0 \\n  at OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService.Handle (OmniSharp.Models.FindUsages.FindUsagesRequest request) [0x00390] in <09370a9acd194e4ab6aa0320066dbeaa>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].AggregateResponsesFromLanguageHandlers (OmniSharp.Endpoint.Exports.ExportHandler`2[TRequest,TResponse][] handlers, TRequest request) [0x000a9] in <c13615cca0c74ceaa15dfd4227fc93cf>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].HandleRequestForLanguage (System.String language, TRequest request, OmniSharp.Protocol.RequestPacket packet) [0x000fb] in <c13615cca0c74ceaa15dfd4227fc93cf>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].Process (OmniSharp.Protocol.RequestPacket packet, OmniSharp.Endpoint.LanguageModel model, Newtonsoft.Json.Linq.JToken requestObject) [0x0024b] in <c13615cca0c74ceaa15dfd4227fc93cf>:0 \\n  at OmniSharp.Stdio.Host.HandleRequest (System.String json, Microsoft.Extensions.Logging.ILogger logger) [0x000e8] in <f4f40b9ed3034a528e91f200ff10538e>:0 \"",
+  "Body": null,
+  "Seq": 3231,
+  "Type": "response"
+}
