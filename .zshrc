@@ -120,6 +120,7 @@ alias status="systemctl status"
 alias start="sudo systemctl start"
 alias stop="sudo systemctl stop"
 alias nuget="mono ~/.local/bin/nuget.exe"
+alias dssql1="mssql-cli -S datasensesql1.westus.cloudapp.azure.com"
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
