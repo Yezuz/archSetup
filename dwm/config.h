@@ -170,7 +170,7 @@ static Key keys[] = {
     {MODKEY | Mod1Mask, XK_h, spawn, CMD("st -e htop")},
     {MODKEY | Mod1Mask, XK_g, spawn, CMD("geary")},
     {MODKEY | Mod1Mask, XK_l, spawn, CMD("librewolf")},
-    {MODKEY | Mod1Mask, XK_n, spawn, CMD("st -e newsboat")},
+    {MODKEY | Mod1Mask, XK_s, spawn, CMD("slock")},
     //{ MODKEY|Mod1Mask,        XK_r,    spawn,          CMD("st -e rtv") },
     {MODKEY | Mod1Mask, XK_r, spawn, CMD("remmina")},
 
