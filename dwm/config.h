@@ -66,7 +66,7 @@ static const Rule rules[] = {
     {"firefox", "Navigator", NULL, 1 << 4, 0, -1},
     {"org.remmina.Remmina", "org.remmina.Remmina", NULL, 1 << 7, 0, -1},
     {"Microsoft-edge-dev", "microsoft-edge-dev", NULL, 2, 0, -1},
-    {"VSCodium", "vscodium", NULL, 1 << 6, 0, -1},
+    {"Code", "code", NULL, 1 << 6, 0, -1},
     {"Emacs", "emacs", NULL, 1 << 6, 0, -1},
     {"Geary", "geary", NULL, 1 << 8, 0, -1},
     {"Org.gnome.Nautilus", "org.gnome.Nautilus", NULL, 1 << 3, 0, -1},
@@ -162,7 +162,7 @@ static Key keys[] = {
 
     /* Apps Launched with SUPER + ALT + KEY */
     {MODKEY | Mod1Mask, XK_a, spawn, CMD("azuredatastudio")},
-    {MODKEY | Mod1Mask, XK_c, spawn, CMD("codium")},
+    {MODKEY | Mod1Mask, XK_c, spawn, CMD("code")},
     //{ MODKEY|Mod1Mask,        XK_e,    spawn,          CMD("st -e emacsclient
     //-c -a emacs") },
     {MODKEY | Mod1Mask, XK_e, spawn, CMD("emacs")},

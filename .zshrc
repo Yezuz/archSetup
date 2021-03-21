@@ -114,7 +114,6 @@ export LANG=en_US.UTF-8
 alias suspendsys="sudo systemctl suspend"
 alias update="sudo pacman -Syu"
 alias yupdate="sudo yay -Syu"
-alias cs="clear"
 alias fs="flameshot gui"
 alias status="systemctl status"
 alias start="sudo systemctl start"
