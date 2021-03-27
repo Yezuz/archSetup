@@ -29,9 +29,8 @@ static const char *fonts[] = {
     "JoyPixels:size=10:antialias=true:autohint=true"};
 static const char col_1[] = "#000000"; /* background color of bar */
 static const char col_2[] = "#282c34"; /* border color unfocused windows */
-static const char col_3[] = "#d7d7d7";
-static const char col_4[] =
-    "#282c34"; /* border color focused windows and tags */
+static const char col_3[] = "#ffffff";
+static const char col_4[] = "#2285E2"; /* border color focused windows and tags */
 /* bar opacity
  * 0xff is no transparency.
  * 0xee adds wee bit of transparency.
