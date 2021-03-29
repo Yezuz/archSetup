@@ -1,0 +1,12 @@
+#! /bin/sh
+#
+#Script name: dmdisconnectmonitor
+
+options=$(echo -e "VGA1\nHDMI1\nALL" | dmenu -p 'Disconnect which monitor?')
+
+case $options in
+      'VGA1') disconnectMonitorVGA1;;      
+      'HDMI1') disconnectMonitorHDMI1;;
+      'ALL') disconnectMonitorVGA1 &&
+             disconnectMonitorHDMI1;;      
+esac

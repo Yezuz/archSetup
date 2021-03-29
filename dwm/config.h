@@ -179,6 +179,8 @@ static Key keys[] = {
     {Mod1Mask | ControlMask, XK_q, spawn, CMD("dmlogout")},
     {Mod1Mask | ControlMask, XK_Delete, spawn, CMD("dmlogout")},
     {Mod1Mask | ControlMask, XK_m, spawn, CMD("dmsetupmonitor")},
+    {Mod1Mask | ControlMask, XK_n, spawn, CMD("dmdisconnectmonitor")},
+    {Mod1Mask | ControlMask, XK_s, spawn, CMD("dmsearch")},
     //{Mod1Mask | ControlMask, XK_r, spawn, CMD("./.dmenu/dmenu-reddio.sh")},
     //{Mod1Mask | ControlMask, XK_s, spawn, CMD("./.dmenu/dmenu-surfraw.sh")},
     //{Mod1Mask | ControlMask, XK_i, spawn, CMD("./.dmenu/dmenu-scrot.sh")},

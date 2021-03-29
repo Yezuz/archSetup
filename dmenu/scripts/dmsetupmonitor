@@ -2,7 +2,7 @@
 #
 #Script name: dmsetupmonitor
 
-options=$(echo -e "VGA1\nHDMI1\nALL" | dmenu -p 'Monitor setup:')
+options=$(echo -e "VGA1\nHDMI1\nALL" | dmenu -p 'Connect which monitor?')
 
 case $options in
     'VGA1')
