@@ -183,6 +183,8 @@ static Key keys[] = {
     {Mod1Mask | ControlMask, XK_f, spawn, CMD("dmsearch")},
     {Mod1Mask | ControlMask, XK_r, spawn, CMD("dmreddio")},
     {Mod1Mask | ControlMask, XK_s, spawn, CMD("dmscrot")},
+    {Mod1Mask | ControlMask, XK_Shift_R, spawn, CMD("dmconf")},
+    {Mod1Mask | ControlMask, XK_h, spawn, CMD("dman")},
     //{Mod1Mask | ControlMask, XK_r, spawn, CMD("./.dmenu/dmenu-reddio.sh")},
     //{Mod1Mask | ControlMask, XK_s, spawn, CMD("./.dmenu/dmenu-surfraw.sh")},
     //{Mod1Mask | ControlMask, XK_i, spawn, CMD("./.dmenu/dmenu-scrot.sh")},
