@@ -1,0 +1,15 @@
+#! /bin/sh
+#
+#Script name: dmsetupmonitor
+
+options=$(echo -e "VGA1\nHDMI1\nALL" | dmenu -p 'Monitor setup:')
+
+case $options in
+    'VGA1')
+        xrandr --auto --output VGA1 --mode 1920x1080 --right-of eDP1;;
+    'HDMI1')
+        xrandr --auto --output HDMI1 --mode 1920x1080 --left-of eDP1;;
+    'ALL')
+        xrandr --auto --output VGA1 --mode 1920x1080 --right-of eDP1
+        xrandr --auto --output HDMI1 --mode 1920x1080 --left-of eDP1;;
+esac

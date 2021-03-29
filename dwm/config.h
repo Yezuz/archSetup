@@ -169,22 +169,24 @@ static Key keys[] = {
     {MODKEY | Mod1Mask, XK_h, spawn, CMD("st -e htop")},
     {MODKEY | Mod1Mask, XK_g, spawn, CMD("geary")},
     {MODKEY | Mod1Mask, XK_l, spawn, CMD("librewolf")},
-    {MODKEY | Mod1Mask, XK_s, spawn, CMD("slock")},
+    {MODKEY | Mod1Mask, XK_s, spawn, CMD("xlock")},
     //{ MODKEY|Mod1Mask,        XK_r,    spawn,          CMD("st -e rtv") },
     {MODKEY | Mod1Mask, XK_r, spawn, CMD("remmina")},
 
     /* Dmenu scripts launched with ALT + CTRL + KEY */
-    {Mod1Mask | ControlMask, XK_e, spawn,
-     CMD("./.dmenu/dmenu-edit-configs.sh")},
-    {Mod1Mask | ControlMask, XK_m, spawn, CMD("./.dmenu/dmenu-sysmon.sh")},
-    {Mod1Mask | ControlMask, XK_p, spawn, CMD("passmenu")},
-    {Mod1Mask | ControlMask, XK_r, spawn, CMD("./.dmenu/dmenu-reddio.sh")},
-    {Mod1Mask | ControlMask, XK_s, spawn, CMD("./.dmenu/dmenu-surfraw.sh")},
-    {Mod1Mask | ControlMask, XK_i, spawn, CMD("./.dmenu/dmenu-scrot.sh")},
+    //{Mod1Mask | ControlMask, XK_e, spawn, CMD("./.dmenu/dmenu-edit-configs.sh")},
+    {Mod1Mask | ControlMask, XK_k, spawn, CMD("dmkill")},
+    {Mod1Mask | ControlMask, XK_q, spawn, CMD("dmlogout")},
+    {Mod1Mask | ControlMask, XK_Delete, spawn, CMD("dmlogout")},
+    {Mod1Mask | ControlMask, XK_m, spawn, CMD("dmsetupmonitor")},
+    //{Mod1Mask | ControlMask, XK_r, spawn, CMD("./.dmenu/dmenu-reddio.sh")},
+    //{Mod1Mask | ControlMask, XK_s, spawn, CMD("./.dmenu/dmenu-surfraw.sh")},
+    //{Mod1Mask | ControlMask, XK_i, spawn, CMD("./.dmenu/dmenu-scrot.sh")},
 
     TAGKEYS(XK_1, 0) TAGKEYS(XK_2, 1) TAGKEYS(XK_3, 2) TAGKEYS(XK_4, 3)
         TAGKEYS(XK_5, 4) TAGKEYS(XK_6, 5) TAGKEYS(XK_7, 6) TAGKEYS(XK_8, 7)
-            TAGKEYS(XK_9, 8){MODKEY | ShiftMask, XK_q, quit, {0}},
+            TAGKEYS(XK_9, 8)
+           // {MODKEY | ShiftMask, XK_q, quit, {0}},
     {MODKEY | ShiftMask, XK_r, quit, {1}},
 
     // Volume

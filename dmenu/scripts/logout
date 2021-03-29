@@ -1,0 +1,9 @@
+#! /usr/bin/sh
+
+option=$(echo -e "POWEROFF\nREBOOT\nLOGOUT" | dmenu)
+
+case "$option" in
+    "POWEROFF") echo "shuting down" ;;
+    "REBOOT")   echo "rebooting" ;;
+    "LOGOUT")   echo "logging out";;
+esac
