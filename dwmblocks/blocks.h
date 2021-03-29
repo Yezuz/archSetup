@@ -1,7 +1,6 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/	 	/*Update Interval*/	/*Update Signal*/
-	/*{" 🐧 ", "/opt/dwmblocks-distrotube-git/scripts/kernel", 360, 2},*/
 	{"", "~/.config/dwmblocks-distrotube-git/scripts/battery", 30, 2},
 	{"  ", "~/.config/dwmblocks-distrotube-git/scripts/cpu2", 1, 18},	
 	{"   ", "~/.config/dwmblocks-distrotube-git/scripts/memory", 6, 1},
