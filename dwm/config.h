@@ -11,7 +11,7 @@ static const char *mutevol[] = {"/usr/bin/pactl", "set-sink-mute", "0",
 static const char *brightup[] = {"brightnessctl", "set", "5%+", NULL};
 static const char *brightdown[] = {"brightnessctl", "set", "5%-", NULL};
 /* appearence */
-static const unsigned int borderpx = 0; /* border pixel of windows */
+static const unsigned int borderpx = 1; /* border pixel of windows */
 static const unsigned int snap = 32;    /* snap pixel */
 static const unsigned int gappx = 6;    /* pixel gap between clients */
 static const int showbar = 1;           /* 0 means no bar */
@@ -24,7 +24,7 @@ static const int vertpadbar = 7;        /* vertical padding for statusbar */
  * a hard dependency and makes colored fonts and emojis possible.
  */
 static const char *fonts[] = {
-    "Mononoki Nerd Font:size=9:antialias=true:autohint=true",
+    "Mononoki Nerd Font: Font:size=9:antialias=true:autohint=true",
     "Hack:size=8:antialias=true:autohint=true",
     "JoyPixels:size=10:antialias=true:autohint=true"};
 static const char col_1[] = "#000000"; /* background color of bar */
@@ -67,7 +67,7 @@ static const Rule rules[] = {
     {"Microsoft-edge-dev", "microsoft-edge-dev", NULL, 2, 0, -1},
     {"Code", "code", NULL, 1 << 6, 0, -1},
     {"Emacs", "emacs", NULL, 1 << 6, 0, -1},
-    {"Geary", "geary", NULL, 1 << 8, 0, -1},
+    {"Thunderbird", "Mail", NULL, 1 << 8, 0, -1},
     {"Org.gnome.Nautilus", "org.gnome.Nautilus", NULL, 1 << 3, 0, -1},
 
 };
@@ -83,7 +83,7 @@ static const Layout layouts[] = {
     /* symbol     arrange function */
     {"[]=", tile}, /* first entry is default */
     {"><>", NULL}, /* no layout function means floating behavior */
-    {"[M]", monocle}, {"HHH", grid}, {NULL, NULL},
+    {"[M]", monocle}, {"HHH", grid}, {"[]=", tile},
 };
 
 /* key definitions */
@@ -167,9 +167,10 @@ static Key keys[] = {
     {MODKEY | Mod1Mask, XK_e, spawn, CMD("emacs")},
     {MODKEY | Mod1Mask, XK_f, spawn, CMD("firefox")},
     {MODKEY | Mod1Mask, XK_h, spawn, CMD("st -e htop")},
-    {MODKEY | Mod1Mask, XK_g, spawn, CMD("geary")},
+    //{MODKEY | Mod1Mask, XK_g, spawn, CMD("geary")},
     {MODKEY | Mod1Mask, XK_l, spawn, CMD("librewolf")},
     {MODKEY | Mod1Mask, XK_s, spawn, CMD("xlock")},
+    {MODKEY | Mod1Mask, XK_t, spawn, CMD("thunderbird")},
     //{ MODKEY|Mod1Mask,        XK_r,    spawn,          CMD("st -e rtv") },
     {MODKEY | Mod1Mask, XK_r, spawn, CMD("remmina")},
 
