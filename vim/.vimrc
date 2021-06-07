@@ -1,4 +1,4 @@
-" makes vim ignore vi compatibility
+  " makes vim ignore vi compatibility
 set nocompatible
 " Search down into subfolders
 " Provides tab-completion for all file-related tasks
@@ -23,17 +23,10 @@ let g:netrw_browse_split=4 "open prior window
 let g:netrw_altv=1 "open splits to the right
 let g:netrw_liststyle=3 "tree view
 let g:netrw_winsize=80
-"let g:NERDCreateDefaultMappings = 1
-"augroup ProjectDrawer
-"  autocmd!
-"  autocmd VimEnter * :Vexplore
-"augroup END
+
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide=',\(^\|\s\s\)\zs\.\S\+'
-" NOW WE CAN:
-" - :edit a folder to open a file browser
-" - <CR>/v/t to open in an h-split/v-split/tab
-" - check |netrw-browse-maps| for more mappings
+
 set showtabline=2
 set noshowmode
 set smartindent
@@ -53,11 +46,11 @@ set laststatus=2
 set nobackup
 set nowritebackup
 set updatetime=300
-set timeoutlen=100
+set timeoutlen=1000
 set splitright
 set splitbelow
 set cmdheight=2
-let mapleader=" "
+let mapleader= " "
 set wildchar=<Tab> wildmenu wildmode=full
 
 call plug#begin('~/.vim/plugged')
@@ -72,7 +65,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'sickill/vim-monokai'
 
 " ide
-Plug 'christoomey/vim-tmux-navigator'
+" Plug 'christoomey/vim-tmux-navigator'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -85,7 +78,6 @@ Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'PhilRunninger/nerdtree-buffer-ops'
-Plug 'preservim/nerdcommenter'
 Plug 'airblade/vim-gitgutter'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'alvan/vim-closetag'
@@ -100,14 +92,22 @@ Plug 'OmniSharp/omnisharp-vim'
 Plug 'dense-analysis/ale'
 Plug  'OrangeT/vim-csharp'
 Plug 'ervandew/supertab'
+Plug 'tpope/vim-fugitive'
+" Waiting for stable v0.5 of neovim, currently is in development
+" Plug 'neovim/nvim-lspconfig'
+" Plug 'anott03/nvim-lspinstall'
 call plug#end()
 
 set termguicolors
 colorscheme gruvbox
 "colorscheme monokai
 let g:gruvbox_contrast_dark = "hard"
+" let g:gruvbox_bold = 1
+" let g:gruvbox_italic = 1
+" let g:gruvbox_italicize_comments = 1
+" let g:gruvbox_italicize_strings=1
 "colorscheme monokai_pro
-"set background=dark 
+" set background=dark 
 "colorscheme hybrid_material
 
 if (has("nvim"))
@@ -122,16 +122,19 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
+" airline setup
 let g:airline_theme="hybrid"
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tablineformatter= 'unique_tail'
+let g:airline#extensions#tabline#formatter= 'unique_tail'
+" let g:airline#extensions#branch#enabled = 1 
 
-set guifont=CodeNewRoman\ NF:h12.5
+set guifont=CodeNewRoman\ NF:h12
 "set guifont=Monaco:h13
 
 " Custom keymaps
-nmap <F5> :buffers<CR>:buffer<Space>
+nmap <leader>b :buffers<CR>:buffer<Space>
 nnoremap <C-e> :NERDTreeToggle<CR>
+nmap <leader>e :NERDTreeToggle<CR>
 
 "let g:neovide_refresh_rate=140
 let g:neovide_transparency=0.95
@@ -139,3 +142,27 @@ let g:neovide_transparency=0.95
 let g:neovide_cursor_antialiasing=v:true
 let g:neovide_cursor_vfx_mode="wireframe"
 
+" leader + l keys redraws the screen and removes any search highlighting
+nmap <leader>l :nohl<CR>
+nmap <leader>w <C-w>
+
+" OmniSharp settings start
+" let g:OmniSharp_server_stdio = 1
+" let g:omnicomplete_fetch_full_documentation = 1
+" let g:OmniSharp_timeout = 30
+"
+" FVim Specific
+FVimCursorSmoothMove v:true
+FVimCursorSmoothBlink v:true
+FVimUIPopupMenu v:true
+FVimBackgroundOpacity 0.90
+" FVimBackgroundAltOpacity 0.70
+FVimBackgroundComposition 'transparent'
+FVimFontAntialias v:true
+FVimFontAutohint v:true
+FVimFontHintLevel 'full'
+FVimFontLigature v:true
+FVimFontLineHeight '+1.0'
+" FVimFontNoBuiltInSymbols v:true
+FVimFontSubpixel v:true
+FVimFontAutoSnap v:true
