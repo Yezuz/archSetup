@@ -69,6 +69,7 @@ static const Rule rules[] = {
     {"Emacs", "emacs", NULL, 1 << 6, 0, -1},
     {"Thunderbird", "Mail", NULL, 1 << 8, 0, -1},
     {"Org.gnome.Nautilus", "org.gnome.Nautilus", NULL, 1 << 3, 0, -1},
+    {"FVim", "FVim", NULL, 1 << 6, 0, -1},
 
 };
 
