@@ -62,6 +62,8 @@ Plug 'dracula/vim'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'altercation/vim-colors-solarized'
 Plug 'sickill/vim-monokai'
+Plug 'Badacadabra/vim-archery'
+Plug 'rakr/vim-one'
 
 " ide
 " Plug 'christoomey/vim-tmux-navigator'
@@ -111,8 +113,8 @@ let g:gruvbox_contrast_dark = "hard"
 " let g:gruvbox_italicize_comments = 1
 " let g:gruvbox_italicize_strings=1
 "colorscheme monokai_pro
-" set background=dark 
-"colorscheme hybrid_material
+set background=dark 
+" colorscheme hybrid_reverse
 
 if (has("nvim"))
   "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
@@ -137,7 +139,7 @@ let g:airline_powerline_fonts = 1
 " let airline#extensions#ale#warning_symbol = 'w:'
 " let g:airline#extensions#branch#enabled = 1 
 
-set guifont=CodeNewRoman\ NF:h9.5
+set guifont=CodeNewRoman\ NF:h8
 "set guifont=Monaco:h13
 
 " Custom keymaps
@@ -162,20 +164,20 @@ nmap <leader>w <C-w>
 
 
 "  FVim Specific
-"
-" FVimCursorSmoothMove v:true
-" FVimCursorSmoothBlink v:true
-" FVimUIPopupMenu v:true
-" FVimBackgroundOpacity 0.90
-" FVimBackgroundComposition 'transparent'
-" FVimFontAntialias v:true
-" FVimFontAutohint v:true
-" FVimFontHintLevel 'full'
-" FVimFontLigature v:true
-" FVimFontLineHeight '+1.0'
-" FVimFontSubpixel v:true
-" FVimFontNoBuiltinSymbols v:true
-" FVimFontAutoSnap v:true
+
+ " FVimCursorSmoothMove v:true
+ " FVimCursorSmoothBlink v:true
+ " FVimUIPopupMenu v:true
+ " FVimBackgroundOpacity 0.90
+ " FVimBackgroundComposition 'transparent'
+ " FVimFontAntialias v:true
+ " FVimFontAutohint v:true
+ " FVimFontHintLevel 'full'
+ " FVimFontLigature v:true
+ " FVimFontLineHeight '+1.0'
+ " FVimFontSubpixel v:true
+ " FVimFontNoBuiltinSymbols v:true
+ " FVimFontAutoSnap v:true
 "
 " ALE Setup
 " let g:ale_completion_enabled = 1

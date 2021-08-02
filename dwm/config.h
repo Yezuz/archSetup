@@ -27,10 +27,10 @@ static const char *fonts[] = {
     "Mononoki Nerd Font: Font:size=9:antialias=true:autohint=true",
     "Hack:size=8:antialias=true:autohint=true",
     "JoyPixels:size=10:antialias=true:autohint=true"};
-static const char col_1[] = "#000000"; /* background color of bar */
+static const char col_1[] = "#383c4a"; /* background color of bar */
 static const char col_2[] = "#282c34"; /* border color unfocused windows */
 static const char col_3[] = "#ffffff";
-static const char col_4[] = "#2285E2"; /* border color focused windows and tags */
+static const char col_4[] = "#5294E2"; /* border color focused windows and tags */
 /* bar opacity
  * 0xff is no transparency.
  * 0xee adds wee bit of transparency.
@@ -60,6 +60,7 @@ static const Rule rules[] = {
      *	WM_NAME(STRING) = title
      */
     /* class      instance    title       tags mask     isfloating   monitor */
+    {"terminology", "main", NULL, 1 << 2, 0, -1},
     {"st-256color", "st-256color", NULL, 1 << 2, 0, -1},
     {"azuredatastudio", "azuredatastudio", NULL, 1 << 5, 0, -1},
     {"firefox", "Navigator", NULL, 1 << 4, 0, -1},

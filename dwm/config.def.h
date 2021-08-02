@@ -94,10 +94,10 @@ static const char *dmenucmd[]    = { "dmenu_run", "-p", "Run: ", NULL };
 /* static const char *dmenucmd[]    = { "dmenu_run", "-g", "10", "-l", "48", "-p", "Run: ", NULL }; */
 
 /* the st terminal with tabbed */
-static const char *termcmd[]     = { "st", NULL };
+static const char *termcmd[]     = { "terminology", NULL };
 /* An alternative way to launch st along with the fish shell */
 /* static const char *termcmd[]     = { "st", "-e fish", NULL }; */
-static const char *tabtermcmd[]  = { "tabbed", "-r", "2", "st", "-w", "''", NULL };
+static const char *tabtermcmd[]  = { "tabbed", "-r", "2", "terminology", "-w", "''", NULL };
 
 static Key keys[] = {
 	/* modifier             key        function        argument */
