@@ -15,6 +15,10 @@ export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
 export PROJECT_HOME=$HOME/Devel
 source /usr/bin/virtualenvwrapper.sh
 
+# Neovide variables
+export NEOVIDE_FRAMELESS=1
+export NEOVIDE_MULTIGRID=1
+
 # Path to your oh-my-zsh installation.
 export ZSH="/home/jesus/.oh-my-zsh"
 
@@ -120,7 +124,7 @@ alias start="sudo systemctl start"
 alias stop="sudo systemctl stop"
 alias nuget="mono ~/.local/bin/nuget.exe"
 alias dssql1="mssql-cli -S datasensesql1.westus.cloudapp.azure.com"
-# alias neovide="neovide --multiGrid"
+# alias neovide="neovide --multigrid"
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 

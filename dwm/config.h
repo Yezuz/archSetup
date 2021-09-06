@@ -24,6 +24,10 @@ static const int vertpadbar = 7;        /* vertical padding for statusbar */
  * a hard dependency and makes colored fonts and emojis possible.
  */
 static const char *fonts[] = {
+    /* "Liberation Mono: Font:size=8:antialias=true:autohint:true", */
+    "Source Code Pro: Font:size=9:antialias=true:autohint:true",
+    /* "CodeNewRoman Nerd Font: Font:size=9:antialias=true:autohint:true", */
+    /* "SauceCodePro Nerd Font: Font:size=8:antialias=true:autohint:true", */
     "Mononoki Nerd Font: Font:size=9:antialias=true:autohint=true",
     "Hack:size=8:antialias=true:autohint=true",
     "JoyPixels:size=10:antialias=true:autohint=true"};

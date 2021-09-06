@@ -1,6 +1,4 @@
-" makes vim ignore vi compatibility
 set nocompatible
-" Search down into subfolders
 " Provides tab-completion for all file-related tasks
 set path+=**
 set wildmenu
@@ -64,6 +62,9 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'sickill/vim-monokai'
 Plug 'Badacadabra/vim-archery'
 Plug 'rakr/vim-one'
+Plug 'arzg/vim-colors-xcode'
+Plug 'flazz/vim-colorschemes'
+" Plug 'joshdick/onedark.vim'
 
 " ide
 " Plug 'christoomey/vim-tmux-navigator'
@@ -90,11 +91,17 @@ Plug 'adamclerk/vim-razor'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'OmniSharp/omnisharp-vim'
+Plug 'nickspoons/vim-sharpenup'
+Plug 'tpope/vim-dadbod'
+" Plug 'tpope/vim-vinegar'
+Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'vim-scripts/dbext.vim'
+Plug 'dyng/ctrlsf.vim'
 Plug 'dense-analysis/ale'
-Plug  'OrangeT/vim-csharp'
+" Plug  'OrangeT/vim-csharp'
 " Plug 'ervandew/supertab'
 Plug 'tpope/vim-fugitive'
-" Waiting for stable v0.5 of neovim, currently is in development
+" Waiting for stable v0.5 of neovim, currently in development
 " Plug 'neovim/nvim-lspconfig'
 " Plug 'anott03/nvim-lspinstall'
 Plug 'hrsh7th/vim-vsnip'
@@ -102,17 +109,34 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+
 call plug#end()
 
 set termguicolors
-colorscheme gruvbox
 "colorscheme monokai
 let g:gruvbox_contrast_dark = "hard"
-" let g:gruvbox_bold = 1
-" let g:gruvbox_italic = 1
-" let g:gruvbox_italicize_comments = 1
-" let g:gruvbox_italicize_strings=1
-"colorscheme monokai_pro
+let g:gruvbox_bold = 1
+let g:gruvbox_italic = 1
+let g:gruvbox_italicize_comments = 1
+let g:gruvbox_italicize_strings=1
+let g:gruvbox_transparent_bg = 1
+let g:materialbox_transparent_bg = 1
+let g:materialbox_italic = 1
+let g:materialbox_bold = 1
+let g:materialbox_contrast_dark = "medium"
+let g:materialbox_italicize_strings = 1
+let g:materialbox_italicize_comments = 1
+
+" let g:onedark_hide_endofbuffer = 1
+" let g:onedark_terminal_italics = 1
+
+let g:one_allow_italics = 1
+let g:one_bold = 1
+
+" colorscheme gruvbox
+" colorscheme materialbox
+colorscheme one
+" colorscheme monokai_pro
 set background=dark 
 " colorscheme hybrid_reverse
 
@@ -129,7 +153,7 @@ if (has("termguicolors"))
 endif
 
 " airline setup
-let g:airline_theme="hybrid"
+let g:airline_theme="one"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter= 'unique_tail'
 " let g:airline_left_sep='>'
@@ -139,7 +163,8 @@ let g:airline_powerline_fonts = 1
 " let airline#extensions#ale#warning_symbol = 'w:'
 " let g:airline#extensions#branch#enabled = 1 
 
-set guifont=CodeNewRoman\ NF:h8
+" set guifont=CodeNewRoman\ NF:h8
+set guifont=SauceCodePro\ NF:h10
 "set guifont=Monaco:h13
 
 " Custom keymaps
@@ -147,7 +172,7 @@ nmap <leader>b :buffers<CR>:buffer<Space>
 nnoremap <C-e> :NERDTreeToggle<CR>
 nmap <leader>e :NERDTreeToggle<CR>
 
-"let g:neovide_refresh_rate=140
+let g:neovide_refresh_rate=140
 let g:neovide_transparency=0.95
 "let g:neovide_multi_grid=v:true
 let g:neovide_cursor_antialiasing=v:true
@@ -220,7 +245,7 @@ let g:ale_completion_symbols = {
 
 
 " Useful keymaps
-" nmap <leader>ki :ALEHover<CR>
+nmap <leader>gh :ALEHover<CR>
 " nmap <F12> :ALEGoToDefinition<CR>
 " nmap <F2> :ALERename<CR>
 
@@ -395,3 +420,22 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 autocmd FileType cs nnoremap <buffer> gd :OmniSharpGotoDefinition<CR>
 
 nmap <leader>. :CocFix<CR>
+
+let g:coc_global_extensions=['coc-omnisharp', 'coc-json', 'coc-sql', 'coc-eslint', 'coc-html', 'coc-db']
+
+let g:OmniSharp_server_stdio = 1
+let g:omnicomplete_fetch_full_documentation = 1
+let g:OmniSharp_timeout = 30
+let g:OmniSharp_autoselect_existing_sln = 1
+
+let g:OmniSharp_popup_options = {
+      \ 'highlight': 'Normal',
+      \ 'padding': [1],
+      \ 'border': [1]
+      \}
+
+let g:sharpenup_map_prefix = '.'
+
+nmap <C-F> <Plug>CtrlSFPrompt
+
+let g:fzf_preview_window = ['right:50%', 'ctrl-/']
