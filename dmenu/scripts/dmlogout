@@ -81,6 +81,7 @@ case $choice in
         ;;
     'SUSPEND')
         if [[ "$(echo -e "No\nYes" | dmenu -i -p "${choice}?" "${@}" )" == "Yes" ]]; then
+            ${LOCKER}&
             systemctl suspend
         else
             output "User chose not to suspend." && exit 0
