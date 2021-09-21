@@ -1,3 +1,4 @@
+//Dependencies: dmscripts-git by Derek Taylor
 #include <X11/XF86keysym.h>
 
 /* volume */
@@ -24,11 +25,10 @@ static const int vertpadbar = 7;        /* vertical padding for statusbar */
  * a hard dependency and makes colored fonts and emojis possible.
  */
 static const char *fonts[] = {
-    /* "Liberation Mono: Font:size=8:antialias=true:autohint:true", */
-    "SauceCodePro Nerd Font: Font:size=9:antialias=true:autohint:true",
-    /* "CodeNewRoman Nerd Font: Font:size=9:antialias=true:autohint:true", */
+    /* "SauceCodePro Nerd Font: Font:size=9:antialias=true:autohint:true", */
+    "CodeNewRoman Nerd Font: Font:size=10:antialias=true:autohint:true",
     /* "SauceCodePro Nerd Font: Font:size=8:antialias=true:autohint:true", */
-    "Mononoki Nerd Font: Font:size=9:antialias=true:autohint=true",
+    /* "Mononoki Nerd Font: Font:size=9:antialias=true:autohint=true", */
     "Hack:size=9:antialias=true:autohint=true",
     "JoyPixels:size=10:antialias=true:autohint=true"};
 static const char col_1[] = "#383c4a"; /* background color of bar */
@@ -121,7 +121,7 @@ static const char *dmenucmd[]    = { "dmenu_run", "-g", "10", "-l", "48",
 "-p", "Run: ", NULL };
 
 /* the st terminal with tabbed */
-static const char *termcmd[] = {"kitty", NULL};
+static const char *termcmd[] = {"st", NULL};
 /* An alternative way to launch st along with the fish shell */
 /* static const char *termcmd[]     = { "st", "-e fish", NULL }; */
 static const char *tabtermcmd[] = {"tabbed", "-r", "2", "st", "-w", "''", NULL};
@@ -182,14 +182,14 @@ static Key keys[] = {
 
     /* Dmenu scripts launched with ALT + CTRL + KEY */
     //{Mod1Mask | ControlMask, XK_e, spawn, CMD("./.dmenu/dmenu-edit-configs.sh")},
-    {Mod1Mask | ControlMask, XK_k, spawn, CMD("dmkill")},
+    {Mod1Mask | ControlMask, XK_k, spawn, CMD("dm-kill")},
     {Mod1Mask | ControlMask, XK_q, spawn, CMD("dmlogout")},
     {Mod1Mask | ControlMask, XK_Delete, spawn, CMD("dmlogout")},
     {Mod1Mask | ControlMask, XK_m, spawn, CMD("dmsetupmonitor")},
     {Mod1Mask | ControlMask, XK_n, spawn, CMD("dmdisconnectmonitor")},
     {Mod1Mask | ControlMask, XK_f, spawn, CMD("dmsearch")},
     {Mod1Mask | ControlMask, XK_r, spawn, CMD("dmreddio")},
-    {Mod1Mask | ControlMask, XK_s, spawn, CMD("dmscrot")},
+    {Mod1Mask | ControlMask, XK_s, spawn, CMD("dm-maim")},
     {Mod1Mask | ControlMask, XK_Shift_R, spawn, CMD("dmconf")},
     {Mod1Mask | ControlMask, XK_h, spawn, CMD("dman")},
     //{Mod1Mask | ControlMask, XK_r, spawn, CMD("./.dmenu/dmenu-reddio.sh")},

@@ -15,7 +15,7 @@
 set -euo pipefail
 
 # Specifying a directory to save our screenshots.
-SCROTDIR="$HOME/Screenshots"
+SCROTDIR="$HOME/Pictures/Screenshots"
 # Makes sure the directory exists.
 mkdir -p "${SCROTDIR}"
 

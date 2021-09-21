@@ -71,7 +71,7 @@ static const struct arg args[] = {
   { ram_perc, " %s%%] ", NULL},
   { battery_state, " [%s "  , "BAT0"},
   { battery_remaining, " %s", "BAT0" },
-  { battery_perc, "(%s%%)/ ", "BAT0" },
+  { battery_perc, "(%s%%) + ", "BAT0" },
   { battery_state, "%s " , "BAT1" },
   { battery_remaining, " %s", "BAT1" },
   { battery_perc, "(%s%%) | ", "BAT1" },
