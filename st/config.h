@@ -11,7 +11,7 @@
  * Arch repos and is listed as a dependency for this build. JoyPixels is also
  * a hard dependency and makes colored fonts and emojis possible.
  */
-static char *font = "CodeNewRoman Nerd Font:pixelsize=13:antialias=true:autohint=true";
+static char *font = "CodeNewRoman Nerd Font:pixelsize=12.5:antialias=true:autohint=true";
 static char *font2[] = { 
     "Hack:pixelsize=13:antialias=true:autohint=true",
 };
