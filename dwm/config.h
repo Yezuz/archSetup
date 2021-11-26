@@ -25,13 +25,15 @@ static const int vertpadbar = 7;        /* vertical padding for statusbar */
  * a hard dependency and makes colored fonts and emojis possible.
  */
 static const char *fonts[] = {
-    /* "SauceCodePro Nerd Font: Font:size=9:antialias=true:autohint:true", */
-    "CodeNewRoman Nerd Font: Font:size=10:antialias=true:autohint:true",
+    /* "mononoki nerd font: Font:size=10: antialias=true: autohint=true", */
+    "Hasklug Nerd Font: Font:size=9:antialias=true:autohint=true",
+    "CodeNewRoman Nerd Font: Font:size=10:antialias=true:autohint=true",
     /* "SauceCodePro Nerd Font: Font:size=8:antialias=true:autohint:true", */
     /* "Mononoki Nerd Font: Font:size=9:antialias=true:autohint=true", */
     "Hack:size=9:antialias=true:autohint=true",
     "JoyPixels:size=10:antialias=true:autohint=true"};
-static const char col_1[] = "#383c4a"; /* background color of bar */
+/* static const char col_1[] = "#383c4a"; /1* background color of bar *1/ */
+static const char col_1[] = "#000000"; /* background color of bar */
 static const char col_2[] = "#282c34"; /* border color unfocused windows */
 static const char col_3[] = "#ffffff";
 static const char col_4[] = "#5294E2"; /* border color focused windows and tags */
