@@ -1,1 +1,0 @@
-[2021-03-03 00:54:05.512] [renderer1] [error] Problem invoking 'GetCodeActions' on OmniSharp server: Error: Request /v2/getcodeactions cancelled, id: 20

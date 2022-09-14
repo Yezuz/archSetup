@@ -1,8 +1,0 @@
-untitled:Untitled-1
-SELECT dg.* FROM DeviceGroup dg WHERE dg.DeviceGroupId IN (
-	SELECT dgm.ChildDeviceGroupId FROM DeviceGroupMember dgm WHERE dgm.ChildDeviceGroupId IS NOT NULL AND dgm.ParentDeviceGroupId IN (
-		SELECT dg.DeviceGroupId FROM DeviceGroup dg WHERE dg.DeviceGroupId IN (
-			SELECT dgm.ChildDeviceGroupId FROM DeviceGroupMember dgm WHERE dgm.ChildDeviceGroupId IS NOT NULL AND dgm.ParentDeviceGroupId = 6090 
-r)
-		) 
-	)

@@ -1,9 +1,0 @@
-[2021-03-04 00:59:24.133] [sharedprocess] [info] Starting to clean up unused language packs.
-[2021-03-04 01:03:26.092] [sharedprocess] [info] Installing extension: patbenatar.advanced-new-file
-[2021-03-04 01:03:31.017] [sharedprocess] [info] Downloaded extension: patbenatar.advanced-new-file undefined
-[2021-03-04 01:03:32.141] [sharedprocess] [info] Extracted extension to /home/jesus/.vscode-oss/extensions/.patbenatar.advanced-new-file-1.2.2: patbenatar.advanced-new-file
-[2021-03-04 01:03:32.141] [sharedprocess] [info] Renamed to /home/jesus/.vscode-oss/extensions/patbenatar.advanced-new-file-1.2.2
-[2021-03-04 01:03:32.142] [sharedprocess] [info] Installation completed. patbenatar.advanced-new-file
-[2021-03-04 01:03:32.150] [sharedprocess] [info] Extensions installed successfully: patbenatar.advanced-new-file
-[2021-03-04 01:13:13.862] [sharedprocess] [info] Uninstalling extension: jsw.csharpextensions
-[2021-03-04 01:13:13.885] [sharedprocess] [info] Successfully uninstalled extension: jsw.csharpextensions
