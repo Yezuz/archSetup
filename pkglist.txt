@@ -2,6 +2,7 @@ acpi
 alsa-utils
 ani-cli
 archlinux-keyring
+asciiquarium
 aspnet-runtime
 autoconf
 automake
@@ -143,6 +144,7 @@ pipewire-pulse
 pkgconf
 polkit-gnome
 postman-bin
+powerpill
 ripgrep
 rofi
 rustdesk-bin
